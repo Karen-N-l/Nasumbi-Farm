@@ -7,6 +7,7 @@ import Beans from '../assets/Beans.jpg';
 import Chicken from '../assets/Chicken.jpg';
 import Cows from '../assets/cows.jpg';
 import Paprika from '../assets/paprika.jpg';
+import Goat from '../assets/goats.jpg';
 import Navbar from './Navbar';
 
 const Allproducts = () => {
@@ -105,10 +106,21 @@ const Allproducts = () => {
         <div className="flex flex-col hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer shadow-md shadow-gray-400 justify-center items-center">
           <img src= {Cows} alt="Products"className="h-[280px] rounded-t-md object-cover w-[100%]" />
           <div className="h-[300px] bg-white rounded-b-md p-2">
-            <span className="text-[#0B8308] font-semibold">Livestock:</span>
+            <span className="text-[#0B8308] font-semibold">Cows:</span>
             <span className="text-xs">
-            Our livestock thrive on a diet of natural grains and forage,
+            Our cows thrive on a diet of natural grains and forage,
              resulting in meat that's not only delicious but also rich in nutrients.
+
+            </span>
+          </div>
+        </div>
+         {/* Product Card 9 */}
+         <div className="flex flex-col hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer shadow-md shadow-gray-400 justify-center items-center">
+          <img src= {Goat} alt="Products"className="h-[280px] rounded-t-md object-cover w-[100%]" />
+          <div className="h-[300px] bg-white rounded-b-md p-2">
+            <span className="text-[#0B8308] font-semibold">Goats:</span>
+            <span className="text-xs">
+            Our goats are grazed in the fields, and the natural food keeps them healthy and strong.
 
             </span>
           </div>
