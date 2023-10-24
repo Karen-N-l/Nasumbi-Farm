@@ -49,15 +49,7 @@ const Contact = () => {
           field="message"
           errors={state.errors}
         />
-        {messageSent ? (
-          <div>
-            <p className="text-[#076C05] text-sm font-bold text-center mt-1">
-              Message sent successfully!
-            </p>
-            {/* Add some spacing after the success message */}
-            <div className="my-1" />
-          </div>
-        ) : null}
+        
         <button
           type="submit"
           disabled={state.submitting}
