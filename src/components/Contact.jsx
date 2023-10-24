@@ -19,7 +19,7 @@ const Contact = () => {
     <div className="w-full h-screen bg-white flex justify-center items-center p-4">
       
         <form onSubmit={handleFormSubmit} className="flex flex-col max-w-[600px] w-full  ">
-          <div className="pb-0 pt-20 mt-5">
+          <div className="pb-0 pt-16 mt-5">
             <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
           </div>
           <input
