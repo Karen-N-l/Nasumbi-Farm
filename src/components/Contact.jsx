@@ -21,7 +21,7 @@ const Contact = () => {
         onSubmit={handleFormSubmit}
         className="flex flex-col max-w-[600px] w-full "
       >
-        <div className="pb-0 pt-20 ">
+        <div className="pb-0 pt-24 ">
           <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
         </div>
         <input
