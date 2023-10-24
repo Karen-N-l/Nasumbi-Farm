@@ -17,8 +17,8 @@ const Contact = () => {
 
   return (
     <div className="w-full h-screen bg-white flex justify-center items-center p-4">
-      <div className="max-w-[600px] w-full p-10">
-        <form onSubmit={handleFormSubmit} className="flex flex-col">
+      
+        <form onSubmit={handleFormSubmit} className="flex flex-col max-w-[600px] w-full  ">
           <div className="pb-0 pt-32">
             <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
           </div>
@@ -55,14 +55,14 @@ const Contact = () => {
             Send a Message
           </button>
           {messageSent && (
-          <p className="text-[#076C05] text-sm font-bold text-center mb-4"> {/* Adjust mt-4 for spacing */}
+          <p className="text-[#076C05] text-sm font-bold text-center mt-4"> {/* Adjust mt-4 for spacing */}
             Message sent successfully!
           </p>
         )}
         </form>
         
       </div>
-    </div>
+    
   );
 };
 
