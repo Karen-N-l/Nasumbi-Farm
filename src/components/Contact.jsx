@@ -51,11 +51,11 @@ const Contact = () => {
         />
         {messageSent ? (
           <div>
-            <p className="text-[#076C05] text-sm font-bold text-center mt-1">
+            <p className="text-[#076C05] text-sm font-bold text-center mt-4">
               Message sent successfully!
             </p>
             {/* Add some spacing after the success message */}
-            <div className="my-1" />
+            <div className="my-4" />
           </div>
         ) : null}
         <button
