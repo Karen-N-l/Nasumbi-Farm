@@ -55,7 +55,7 @@ const Contact = () => {
             Send a Message
           </button>
           {messageSent && (
-          <p className="text-[#076C05] text-sm font-bold text-center mt-4"> {/* Adjust mt-4 for spacing */}
+          <p className="text-[#076C05] text-sm font-bold text-center mb-4"> {/* Adjust mt-4 for spacing */}
             Message sent successfully!
           </p>
         )}
