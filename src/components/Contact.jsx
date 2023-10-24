@@ -57,7 +57,7 @@ const Contact = () => {
         <button
           type="submit"
           disabled={state.submitting}
-          className="bg-[#6E9320] text-white border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-md"
+          className="bg-[#6E9320] text-white border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-md mb-5"
         >
           Send a Message
         </button>
