@@ -54,14 +54,13 @@ const Contact = () => {
           >
             Send a Message
           </button>
-        </form>
-        {messageSent && (
-          <div>
-            <p className="text-[#076C05] text-sm font-bold text-center mt-1">
-              Message sent successfully!
-            </p>
-          </div>
+          {messageSent && (
+          <p className="text-[#076C05] text-sm font-bold text-center mb-4"> {/* Adjust mt-4 for spacing */}
+            Message sent successfully!
+          </p>
         )}
+        </form>
+        
       </div>
     </div>
   );
