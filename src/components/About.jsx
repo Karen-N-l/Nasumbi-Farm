@@ -22,9 +22,9 @@ const About = () => {
          We're passionate about sustainable agriculture and animal husbandry. With a deep-rooted commitment to quality and innovation, we've been cultivating a wide variety of crops and nurturing thriving poultry and livestock for years. Our journey is driven by a dedication to providing fresh, healthy, and ethically raised products to our community. We take pride in our efforts to promote responsible farming practices, and we're excited to share our story and values with you.
         </p>
         <div >
-        <Link to='/contact'smooth={true} duration={500}>
+        <Link to='/products'smooth={true} duration={500}>
           <button className="bg-[#A8D34B]  border-2 border-[#A8D34B] px-4 py-3 my-8 rounded-md  text-white">
-          Contact Us
+          Learn More
           </button>
           </Link>
         </div>
