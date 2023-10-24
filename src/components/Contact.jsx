@@ -19,7 +19,7 @@ const Contact = () => {
     <div className="w-full h-screen bg-white flex justify-center items-center p-4">
       <form
         onSubmit={handleFormSubmit}
-        className="flex flex-col max-w-[600px] w-full pb-20"
+        className="flex flex-col max-w-[600px] w-full pb-10"
       >
         <div className="pb-0 pt-32 ">
           <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
@@ -49,11 +49,15 @@ const Contact = () => {
           field="message"
           errors={state.errors}
         />
-        {messageSent && (
-          <p className="text-[#076C05] text-sm font-bold text-center mt-4">
-            Message sent successfully!
-          </p>
-        )}
+        {messageSent ? (
+          <div>
+            <p className="text-[#076C05] text-sm font-bold text-center mt-4">
+              Message sent successfully!
+            </p>
+            {/* Add some spacing after the success message */}
+            <div className="my-4" />
+          </div>
+        ) : null}
         <button
           type="submit"
           disabled={state.submitting}
