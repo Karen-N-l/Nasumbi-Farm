@@ -19,9 +19,9 @@ const Contact = () => {
     <div className="w-full h-screen bg-white flex justify-center items-center p-4">
       <form
         onSubmit={handleFormSubmit}
-        className="flex flex-col max-w-[600px] w-full pb-5"
+        className="flex flex-col max-w-[600px] w-full "
       >
-        <div className="pb-0 pt-28 ">
+        <div className="pb-0 pt-24 ">
           <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
         </div>
         <input
@@ -57,7 +57,7 @@ const Contact = () => {
         <button
           type="submit"
           disabled={state.submitting}
-          className="bg-[#6E9320] text-white border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-md mb-5"
+          className="bg-[#6E9320] text-white border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-md "
         >
           Send a Message
         </button>
