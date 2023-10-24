@@ -19,7 +19,7 @@ const Contact = () => {
     <div className="w-full h-screen bg-white flex justify-center items-center p-4">
       <form
         onSubmit={handleFormSubmit}
-        className="flex flex-col max-w-[600px] w-full pb-10 pt-10"
+        className="flex flex-col max-w-[600px] w-full pb-10 "
       >
         <div className="pb-0 pt-32 ">
           <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
@@ -54,7 +54,8 @@ const Contact = () => {
             <p className="text-[#076C05] text-sm font-bold text-center mt-1">
               Message sent successfully!
             </p>
-            
+            {/* Add some spacing after the success message */}
+            <div className="my-1" />
           </div>
         ) : null}
         <button
@@ -64,6 +65,15 @@ const Contact = () => {
         >
           Send a Message
         </button>
+        {messageSent ? (
+          <div>
+            <p className="text-[#076C05] text-sm font-bold text-center mt-1">
+              Message sent successfully!
+            </p>
+            {/* Add some spacing after the success message */}
+            <div className="my-1" />
+          </div>
+        ) : null}
       </form>
     </div>
   );
