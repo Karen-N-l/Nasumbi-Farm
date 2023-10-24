@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-white flex justify-center items-center p-4">
+    <div className="w-full h-screen bg-white flex justify-center items-center p-4 mb-4">
       <form
         onSubmit={handleFormSubmit}
         className="flex flex-col max-w-[600px] w-full "
