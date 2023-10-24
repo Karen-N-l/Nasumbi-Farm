@@ -19,9 +19,9 @@ const Contact = () => {
     <div className="w-full h-screen bg-white flex justify-center items-center p-4">
       <form
         onSubmit={handleFormSubmit}
-        className="flex flex-col max-w-[600px] w-full pb-10 "
+        className="flex flex-col max-w-[600px] w-full pb-10 pt-5"
       >
-        <div className="pb-0 pt-32 ">
+        <div className="pb-0 pt-32">
           <p className="text-[#076C05] text-3xl font-bold">Contact Us</p>
         </div>
         <input
@@ -35,25 +35,24 @@ const Contact = () => {
           className="my-4 p-2 bg-[#ccd6f6] outline-none"
           type="email"
           placeholder="Email"
-          name="email"required
+          name="email" required
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <textarea
           className="bg-[#ccd6f6] p-2 outline-none"
           name="message"
           rows="10"
-          placeholder="Message"required
+          placeholder="Message" required
         />
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
-        
         <button
           type="submit"
           disabled={state.submitting}
-          className="bg-[#6E9320] text-white border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-md "
+          className="bg-[#6E9320] text-white border-2 px-4 py-3 my-8 mx-auto flex items-center rounded-md"
         >
           Send a Message
         </button>
@@ -62,8 +61,6 @@ const Contact = () => {
             <p className="text-[#076C05] text-sm font-bold text-center mt-1">
               Message sent successfully!
             </p>
-            {/* Add some spacing after the success message */}
-            <div className="my-1" />
           </div>
         ) : null}
       </form>
